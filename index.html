@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="container-wrapper">
+          <!-- <div class="img-container"> -->
+          <img src="./asssets/burger.jpg" alt="cheese burger" />
+          <!-- </div> -->
+
+          <div class="details">
+            <h1>Jimmy's Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container" id="menu-container">
+        <!-- <div class="item-container">
+          <img src="./asssets/pizza.svg" alt="" class="pizza" />
+          <div class="item-details">
+            <h3>Pizza</h3>
+            <p>pepproni, mushrooms, mozrella</p>
+            <p class="price">$14</p>
+          </div>
+          <button class="button" id="add-to-cart" name="Pizza" data-price="14">+</button>
+        </div>
+        <div class="item-container">
+          <img src="./asssets/burger.svg" alt="" class="pizza" />
+
+          <div class="item-details">
+            <h3>Hambuger</h3>
+            <p>beef, cheese, lettuce</p>
+            <p class="price">$12</p>
+          </div>
+          <button class="button" id="add-to-cart" name="Hamburger" data-price="12">+</button>
+        </div>
+        <div class="item-container">
+          <img src="./asssets/beer.svg" alt="" class="pizza" />
+
+          <div class="item-details">
+            <h3>Beer</h3>
+            <p>grain, hops, yeast, water</p>
+            <p class="price">$12</p>
+          </div>
+          <button class="button" id="add-to-cart" name="Beer" data-price="12">+</button>
+        </div> -->
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <h3 class="order-summary-response" id="order-summary-response">Thanks James your orer is on the way!</h3>
+
+        <div class="order-summary" id="order-summary">
+          <h3>Your order</h3>
+
+          <!-- blank on purpose to contain orders -->
+          <ul class="order-list" id="order-list">
+            <!-- <li>
+              <div class="item-list">
+                <div class="item-list-name">
+                  <p>Pizza</p>
+                  <button class="item-list-btn">remove</button>
+                </div>
+                <p>$14</p>
+              </div>
+            </li> -->
+          </ul>
+
+          <div class="total-price">
+            <p>Total price:</p>
+            <span id="total-cost" class="total-cost"></span>
+          </div>
+
+          <div class="button-container">
+            <button class="order-btn" id="complete-btn" disabled>Complete your order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="checkout-modal">
+        <h3>Enter card details</h3>
+
+        <form>
+          <label for="full-name" class="error-label" id="full-name-label"></label>
+          <input type="text" placeholder="Enter your name" class="input-card" id="full-name" required />
+
+          <label for="credit-card" class="error-label" id="credit-card-label"></label>
+          <input type="number" placeholder="Enter card number" class="input-card" id="credit-card" required />
+
+          <label for="ccv" class="error-label" id="ccv-label"></label>
+          <input type="number" placeholder="Enter CCV" class="input-card" id="ccv" required />
+
+          <button class="pay-btn" id="pay-btn">Pay</button>
+        </form>
+
+        <button class="close-btn" id="close-btn">X</button>
+      </div>
+    </footer>
+    <script type="importmap">
+      {
+        "imports": {
+          "uuid": "https://cdn.skypack.dev/uuid"
+        }
+      }
+    </script>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
